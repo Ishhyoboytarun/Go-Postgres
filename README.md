@@ -1,4 +1,4 @@
-# Go-Postgres: Small Stock Market Backend with CRUD APIs
+# Go-Postgres: Small Stock Market
 
 Go-Postgres is a small yet powerful stock market backend written in Golang. It provides a set of CRUD APIs to manage stock data efficiently. This project includes models, handlers, and operations on PostgreSQL for seamless data management.
 
