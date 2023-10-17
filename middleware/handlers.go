@@ -1,10 +1,10 @@
 package middleware
 
 import (
+	"Go-Postgres/models" // models package where Stock schema is defined
 	"database/sql"
 	"encoding/json" // package to encode and decode the json into struct and vice versa
 	"fmt"
-	"go-postgres-stocks-yt/models" // models package where Stock schema is defined
 	"log"
 	"net/http" // used to access the request and response object of the api
 	"os"       // used to read the environment variable
@@ -181,7 +181,7 @@ func DeleteStock(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(res)
 }
 
-//------------------------- handler functions ----------------
+// ------------------------- handler functions ----------------
 // insert one stock in the DB
 func insertStock(stock models.Stock) int64 {
 	db := createConnection()
