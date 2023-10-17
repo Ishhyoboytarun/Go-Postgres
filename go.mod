@@ -1,4 +1,6 @@
-module go-postgres-stocks-yt
+module Go-Postgres
+
+go 1.21.1
 
 require (
 	github.com/gorilla/mux v1.7.4
